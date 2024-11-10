@@ -14,41 +14,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Показать всплывающее сообщение
     clickMeButton.addEventListener('click', function () {
-        popupContainer.style.display = 'flex';
+        popupContainer.classList.remove('hidden');
     });
 
     // Скрыть всплывающее сообщение
     closeButton.addEventListener('click', function () {
-        popupContainer.style.display = 'none';
+        popupContainer.classList.add('hidden');
     });
 
     // Показать тест
     takeTestButton.addEventListener('click', function () {
-        testContainer.style.display = 'block';
+        testContainer.classList.remove('hidden');
     });
 
     // Скрыть окно теста
     closeTestContainer.addEventListener('click', function () {
-        testContainer.style.display = 'none';
+        testContainer.classList.add('hidden');
     });
 
     // Отправить тест
     submitTestButton.addEventListener('click', function () {
-        testResultContainer.style.display = 'block';
+        testResultContainer.classList.remove('hidden');
     });
 
     // Скрыть результаты теста
     closeTestResult.addEventListener('click', function () {
-        testResultContainer.style.display = 'none';
+        testResultContainer.classList.add('hidden');
     });
 
     // Показать еще одно сообщение
     loveMessageButton.addEventListener('click', function () {
-        loveMessagePopup.style.display = 'flex';
+        loveMessagePopup.classList.remove('hidden');
     });
 
     // Скрыть сообщение любви
     closeLoveMessage.addEventListener('click', function () {
-        loveMessagePopup.style.display = 'none';
+        loveMessagePopup.classList.add('hidden');
     });
 });
