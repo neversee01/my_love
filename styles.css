@@ -107,12 +107,36 @@ body {
     width: 90%;
     max-width: 500px;
     text-align: center;
-    color: #000; /* Изменен цвет текста на черный */
+    color: #000 !important; /* Переопределение цвета текста на черный */
 }
 
-.popup h2,
+.popup h2 {
+    color: #000 !important; /* Изменение цвета заголовка на черный */
+}
+
 .popup p {
-    color: #000; /* Изменен цвет текста на черный для заголовков и параграфов */
+    color: #000 !important; /* Изменение цвета текста в параграфах на черный */
+}
+
+textarea {
+    width: 80%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #FF1493;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: #000 !important; /* Цвет текста в textarea */
+    background-color: #fff;
+}
+
+select, input[type="range"] {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+select {
+    color: #000 !important; /* Изменение цвета текста в выпадающем списке */
 }
 
 .close-cross {
@@ -128,26 +152,6 @@ body {
 
 .close-cross:hover {
     transform: scale(1.2);
-}
-
-textarea {
-    width: 80%;
-    height: 60px;
-    border-radius: 5px;
-    border: 1px solid #FF1493;
-    padding: 10px;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    color: #000; /* Цвет текста для textarea */
-}
-
-select, input[type="range"] {
-    width: 80%;
-    margin-bottom: 20px;
-}
-
-select {
-    color: #000; /* Изменен цвет текста в выпадающем списке */
 }
 
 .hidden {
