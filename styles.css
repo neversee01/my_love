@@ -107,6 +107,12 @@ body {
     width: 90%;
     max-width: 500px;
     text-align: center;
+    color: #000; /* Изменен цвет текста на черный */
+}
+
+.popup h2,
+.popup p {
+    color: #000; /* Изменен цвет текста на черный для заголовков и параграфов */
 }
 
 .close-cross {
@@ -132,11 +138,16 @@ textarea {
     padding: 10px;
     font-family: 'Courier New', monospace;
     font-size: 1rem;
+    color: #000; /* Цвет текста для textarea */
 }
 
 select, input[type="range"] {
     width: 80%;
     margin-bottom: 20px;
+}
+
+select {
+    color: #000; /* Изменен цвет текста в выпадающем списке */
 }
 
 .hidden {
